@@ -17,4 +17,10 @@ app.get('/', (req, res, next) => {
     })
 })
 
+app.get('/hello', (req, res, next) => {
+    return res.json({
+        hello: "what are you"
+    })
+})
+
 module.exports = app;
